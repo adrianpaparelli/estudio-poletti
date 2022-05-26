@@ -5,16 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Libre+Bodoni:ital@1&family=Ms+Madi&family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Estudio Poletti</title>
   </head>
@@ -46,7 +43,7 @@
               <a href="../pages/quienesSomos.html">NOSOTROS</a>
             </li>
             <li>
-              <a href="../pages/departamentos.html">DESPARTAMENTOS</a>
+              <a href="../pages/departamentos.html">DEPARTAMENTOS</a>
             </li>
             <li>
               <a href="../pages/novedades.html">NOVEDADES</a>
@@ -69,23 +66,25 @@
         <div>
             <form>
                 <h2 class="contactotitulo">Dejanos tu consulta</h2><!-- Formulario inactivo por el momento -->
-                <div class="formGrupo"> 
-                    <label class="grupoLabel" for="nombre">Nombre</label>
-                    <input class="grupoInput" type="text" name="nombre" placeholder="Nombre">
+                  
+                <div class="mb-3" class="formGrupo">
+                  <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="nombre y Apellido">
                 </div>
-                <div class="formGrupo">
-                    <label class="grupoLabel" for="apellido">Apellido</label>
-                    <input class="grupoInput" type="text" name="apellido" placeholder="Apellido">
+
+                <div class="mb-3" class="formGrupo">
+                  <label for="exampleFormControlInput1" class="form-label">Numero de celular</label>
+                  <input type="telephone" class="form-control" id="exampleFormControlInput1" placeholder="1144449999">
                 </div>
-                <div class="formGrupo">
-                    <label class="grupoLabel" for="email">E-mail</label>
-                    <input class="grupoInput" type="text" name="email" placeholder="E-mail">
-                </div>
-                <div class="formGrupo">
-                    <label class="grupoLabel" for="consulta">Consulta</label>
-                    <textarea class="grupoInput" name="" id="" cols="30" rows="10"  placeholder="Ingresá tu consulta"></textarea>
-                </div>
-                <div class="formGrupo">
+                
+                <div class="mb-3" class="formGrupo">
+                    <label for="exampleFormControlInput1" class="form-label">Direccion de email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3" class="formGrupo">
+                    <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu consulta</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
                     <button class="botonEnviar" type="submit">ENVIAR MENSAJE</button>
             </div>
             </form>
@@ -98,7 +97,10 @@
           2022 | Todos los derechos reservados | Hecho por Adrian Paparelli
         </p>
       </footer>
+      <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+      crossorigin="anonymous">
+      </script>
     </body>
-  </html>
-  </body>
 </html>
