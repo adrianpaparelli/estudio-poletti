@@ -1,0 +1,233 @@
+@import "animaciones";
+@import "footer";
+@import "header";
+@import "responsive";
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** MAIN ***/
+
+.indexPrincipal {
+    background-color: white;
+}
+
+.indexPortada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 425px;
+    background-image: url(../img/imgPrincipal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+
+.portadaTitulo {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px #1e1c1c;
+}
+
+.portadaParrafo {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px #1d1b1c;
+}
+
+/*** DEPARTAMENTOS INDEX ***/
+
+.seccionTituloPrincipal {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #730220;
+    margin: 40px;
+}
+
+.seccionContenedor {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.seccionDep {
+    width: 22%;
+    cursor: pointer;
+    margin: 10px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    color: #403B36;
+}
+
+.seccionDep:hover {
+    background-color: #f2f2f2;
+}
+
+.seccionImg {
+    width: fit-content;
+    margin: 30px auto;
+    display: block;
+}
+
+.seccionTitulo {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*** NOSOTROS ***/
+
+.imgGeneral {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.titulosPrincipales {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #730220;
+    margin-left: 70px;
+    margin-top: 50px;
+    font-weight: normal;
+}
+
+.parrafoNosotros {
+    font-family: 'Poppins', sans-serif;
+    line-height: 27px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 20px;
+    color: #403B36;
+}
+
+/*** DEPARTAMENTOS ***/
+
+.deptos {
+    width: 75%;
+    margin: 40px auto;
+}
+
+.depto {
+    display: grid;
+    grid-template-areas:
+        "depto-img depto-descripcion";
+}
+
+.deptoImg {
+    grid-area: depto-img;
+    margin-top: 45px;
+    margin-right: 20px;
+}
+
+.deptoDescripcion {
+    display: flex;
+    flex-direction: column;
+    grid-area: depto-descripcion;
+}
+
+.deptoTitulo {
+    border-bottom: 1px solid grey;
+    font-weight: normal;
+    color: #730220;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.deptoParrafo {
+    color: #403B36;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.deptoParrafoNombre {
+    border-bottom: 1px solid grey;
+    color: #403B36;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+/*** NOVEDADES ***/
+
+.parrafoNovedades {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 20px;
+    color: #403B36;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, gray, white);
+}
+
+/*** FORMULARIO ***/
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contactotitulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #730220;
+    font-weight: normal;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.formGrupo {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.grupoLabel {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grupoInput {
+    border: 1px solid #403B36;
+    padding: 10px 10px;
+}
+
+.botonEnviar {
+    padding: 10px 0;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    background-color: #d9c8b4;
+    color: #403B36;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+.botonEnviar:hover {
+    background-color: #e8ddd1;
+    ;
+}

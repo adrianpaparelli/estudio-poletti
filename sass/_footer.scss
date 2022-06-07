@@ -1,0 +1,33 @@
+/* FOOTER */
+
+footer {
+    /* #f5f2ef */
+    background-color: #403B36;
+    margin-top: 70px;
+    height: 150px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.linkFooter {
+    display: block;
+    text-decoration: none;
+    color: #403B36;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #e8ddd1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.linkFooter:hover {
+    background-color: #d9c8b4;
+}
+
+.parrafoFooter {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}

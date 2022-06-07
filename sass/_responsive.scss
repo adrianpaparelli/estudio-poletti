@@ -1,0 +1,82 @@
+/* ESTILOS RESPONSIVE */
+
+/* HEADER */
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+    .header-sup-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logoSubtitulo {
+        margin-bottom: 25px;
+    }
+
+    .indexPortada {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .fa-align-justify {
+        display: block;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+}
+
+/* INDEX */
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+    .seccionContenedor {
+        display: grid;
+        grid-template-areas:
+            "img-depto img-depto"
+            "titulo-depto titulo-depto";
+    }
+
+    .seccionImg {
+        grid-area: img-depto;
+        margin-left: 70px;
+    }
+
+    .seccionTitulo {
+        grid-area: titulo-depto;
+        margin-left: 70px;
+    }
+}
+
+/* NOSOTROS */
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+    .imgGeneral {
+        width: 400px;
+    }
+
+    .titulosPrincipales {
+        font-size: 30px;
+    }
+}
+
+/* CONTACTO */
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+    .contactotitulo {
+        font-size: 30px;
+    }
+
+    .formGrupo {
+        width: 300px;
+    }
+
+    .botonEnviar {
+        margin-bottom: 20px;
+    }
+}

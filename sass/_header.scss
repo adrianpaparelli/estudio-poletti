@@ -1,0 +1,91 @@
+/* HEADER */
+
+.header-sup-container {
+    background-color: #403B36;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.fa-phone {
+    color: #d9c8b4;
+    margin-right: 10px;
+}
+
+.telefono .email {
+    color: whitesmoke;
+    margin-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+
+.fa-envelope {
+    color: #d9c8b4;
+    margin-right: 10px;
+}
+
+.email :hover {
+    color: #d9c8b4;
+}
+
+.email a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.headerContainer {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+/* HEADER LOGO */
+
+.logo {
+    margin-left: 10px;
+}
+
+.logoTitulo {
+    color: #403B36;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+}
+
+.logoSubtitulo {
+    color: #403B36;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* HEADER MENU */
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    padding: 15px;
+    font-family: $fuente-menu;
+}
+
+.menu li a:hover {
+    color: #a66d6d;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: $color-menu;
+    box-shadow: $sombra-menu;
+}
+
+.fa-align-justify {
+    display: none;
+}
+
+$fuente-menu: normal 18px/1.5 'Poppins', sans-serif, bold;
