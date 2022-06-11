@@ -88,4 +88,8 @@
     display: none;
 }
 
-$fuente-menu: normal 18px/1.5 'Poppins', sans-serif, bold;
+$redes: (twitter: #55acee,facebook: #3a5795,send-mail: #C25E30);
+
+@each $red, $color in $redes { .btn--#{$red} {
+background-color: $color; }
+}

@@ -17,6 +17,7 @@
 }
 
 .indexPortada {
+    @include flex-column-center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,7 +216,7 @@
     padding: 10px 10px;
 }
 
-.botonEnviar {
+.boton { 
     padding: 10px 0;
     margin-top: 15px;
     margin-bottom: 40px;
@@ -225,9 +226,22 @@
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     border: none;
-}
+    }
 
-.botonEnviar:hover {
-    background-color: #e8ddd1;
-    ;
-}
+    .boton--botonEnviar{ @extend .boton;
+    background-color:green;
+    color:yellow; 
+    }
+
+    .boton--botonSuscribir{ @extend .boton;
+    background-color:red;
+    color:yellow; 
+    }
+
+    .botonEnviar:hover {
+        background-color: #e8ddd1;
+    }
+
+    .botonSuscribir:hover {
+        background-color: #e8ddd1;
+    }
