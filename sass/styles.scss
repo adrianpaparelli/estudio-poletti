@@ -1,8 +1,9 @@
+@import "variables";
+@import "mixins";
 @import "animaciones";
 @import "footer";
 @import "header";
 @import "responsive";
-@import "variables";
 
 * {
     margin: 0;
@@ -169,7 +170,15 @@
 
 /*** NOVEDADES ***/
 
-.parrafoNovedades {
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+     }
+
+.parrafo1Novedades {
     margin-top: 25px;
     margin-bottom: 50px;
     margin-left: 70px;
@@ -180,62 +189,74 @@
     background-image: linear-gradient(to right, gray, white);
 }
 
-/*** FORMULARIO ***/
-
-.contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.contactotitulo {
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    color: #730220;
-    font-weight: normal;
+.parrafo2Novedades {
     margin-top: 25px;
-    margin-bottom: 30px;
-}
-
-.formGrupo {
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-}
-
-.grupoLabel {
-    padding-top: 15px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-}
-
-.grupoInput {
-    border: 1px solid #403B36;
-    padding: 10px 10px;
-}
-
-.boton { 
-    padding: 10px 0;
-    margin-top: 15px;
-    margin-bottom: 40px;
-    background-color: #d9c8b4;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 20px;
     color: #403B36;
-    font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    border: none;
+    background-image: linear-gradient(to right, gray, white);
+
+    /*** FORMULARIO ***/
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
-    .boton--botonEnviar{ @extend .boton;
-    background-color:green;
-    color:yellow; 
+    .contactotitulo {
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        color: #730220;
+        font-weight: normal;
+        margin-top: 25px;
+        margin-bottom: 30px;
     }
 
-    .boton--botonSuscribir{ @extend .boton;
-    background-color:red;
-    color:yellow; 
+    .formGrupo {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+    }
+
+    .grupoLabel {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .grupoInput {
+        border: 1px solid #403B36;
+        padding: 10px 10px;
+    }
+
+    .boton {
+        padding: 10px 0;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        background-color: #d9c8b4;
+        color: #403B36;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        border: none;
+    }
+
+    .boton--botonEnviar {
+        @extend .boton;
+        background-color: green;
+        color: yellow;
+    }
+
+    .boton--botonSuscribir {
+        @extend .boton;
+        background-color: red;
+        color: yellow;
     }
 
     .botonEnviar:hover {
@@ -256,9 +277,11 @@
         background: #234567;
         font-variant: small-caps;
         text-shadow: 1px 1px black;
-      }
+    }
 
-    .headercontainer input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    .headercontainer input[type="checkbox"],
+    .respmenu .fa-bars,
+    .respmenu .fa-times {
         position: absolute;
         box-sizing: border-box;
         margin: 0;
@@ -267,36 +290,38 @@
         top: 0;
         width: 48px;
         height: 48px;
-      }
-      
-    .headercontainer .fa-bars, .respmenu .fa-times {
+    }
+
+    .headercontainer .fa-bars,
+    .respmenu .fa-times {
         font-size: 48px;
         pointer-events: none;
-      }
-      
+    }
+
     .headercontainer input[type="checkbox"] {
         opacity: 0;
-      }
-      
+    }
+
     .headercontainer {
         color: white;
         position: relative;
         background: #123456;
         min-height: 48px;
-      }
-      
+    }
+
     .headercontainer nav {
         display: none;
-      }
-      
-    .headercontainer input:checked ~ nav {
+    }
+
+    .headercontainer input:checked~nav {
         display: block;
-      }
-      
-    .headercontainer input:checked ~ .fa-bars {
+    }
+
+    .headercontainer input:checked~.fa-bars {
         display: none;
-      }
-      
-    .headercontainer input:not(:checked) ~ .fa-times {
+    }
+
+    .headercontainer input:not(:checked)~.fa-times {
         display: none;
-      }
+    }
+}

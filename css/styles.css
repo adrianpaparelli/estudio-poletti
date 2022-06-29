@@ -52,7 +52,7 @@ footer {
   color: #d9c8b4;
   margin-right: 10px; }
 
-.telefono {
+.telefono .email {
   color: whitesmoke;
   margin-right: 30px;
   font-family: 'Poppins', sans-serif;
@@ -61,11 +61,6 @@ footer {
 .fa-envelope {
   color: #d9c8b4;
   margin-right: 10px; }
-
-.email {
-  color: whitesmoke;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px; }
 
 .email :hover {
   color: #d9c8b4; }
@@ -103,19 +98,27 @@ footer {
 
 .menu li {
   padding: 15px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  font-weight: bold; }
+  font-family: normal 18px/1.5 "Poppins", sans-serif, bold; }
 
 .menu li a:hover {
   color: #a66d6d; }
 
 .menu li a {
   text-decoration: none;
-  color: #730220; }
+  color: #F44336;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2); }
 
 .fa-align-justify {
   display: none; }
+
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--send-mail {
+  background-color: #C25E30; }
 
 /* ESTILOS RESPONSIVE */
 /* HEADER */
@@ -175,6 +178,9 @@ footer {
   background-color: white; }
 
 .indexPortada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -302,7 +308,14 @@ footer {
   font-size: 14px; }
 
 /*** NOVEDADES ***/
-.parrafoNovedades {
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly; }
+
+.parrafo1Novedades {
   margin-top: 25px;
   margin-bottom: 50px;
   margin-left: 70px;
@@ -312,46 +325,97 @@ footer {
   font-family: 'Poppins', sans-serif;
   background-image: linear-gradient(to right, gray, white); }
 
-/*** FORMULARIO ***/
-.contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%; }
-
-.contactotitulo {
-  font-family: 'Poppins', sans-serif;
-  font-size: 40px;
-  color: #730220;
-  font-weight: normal;
+.parrafo2Novedades {
   margin-top: 25px;
-  margin-bottom: 30px; }
-
-.formGrupo {
-  display: flex;
-  flex-direction: column;
-  width: 800px; }
-
-.grupoLabel {
-  padding-top: 15px;
-  padding-bottom: 5px;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif; }
-
-.grupoInput {
-  border: 1px solid #403B36;
-  padding: 10px 10px; }
-
-.botonEnviar {
-  padding: 10px 0;
-  margin-top: 15px;
-  margin-bottom: 40px;
-  background-color: #d9c8b4;
+  margin-bottom: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+  font-size: 20px;
   color: #403B36;
-  font-size: 16px;
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  border: none; }
-
-.botonEnviar:hover {
-  background-color: #e8ddd1; }
+  background-image: linear-gradient(to right, gray, white);
+  /*** FORMULARIO ***/ }
+  .parrafo2Novedades .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+  .parrafo2Novedades .contactotitulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #730220;
+    font-weight: normal;
+    margin-top: 25px;
+    margin-bottom: 30px; }
+  .parrafo2Novedades .formGrupo {
+    display: flex;
+    flex-direction: column;
+    width: 800px; }
+  .parrafo2Novedades .grupoLabel {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; }
+  .parrafo2Novedades .grupoInput {
+    border: 1px solid #403B36;
+    padding: 10px 10px; }
+  .parrafo2Novedades .boton, .parrafo2Novedades .boton--botonEnviar, .parrafo2Novedades .boton--botonSuscribir {
+    padding: 10px 0;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    background-color: #d9c8b4;
+    color: #403B36;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: none; }
+  .parrafo2Novedades .boton--botonEnviar {
+    background-color: green;
+    color: yellow; }
+  .parrafo2Novedades .boton--botonSuscribir {
+    background-color: red;
+    color: yellow; }
+  .parrafo2Novedades .botonEnviar:hover {
+    background-color: #e8ddd1; }
+  .parrafo2Novedades .botonSuscribir:hover {
+    background-color: #e8ddd1; }
+  .parrafo2Novedades .headercontainer a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #456789;
+    max-width: 200px;
+    background: #234567;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black; }
+  .parrafo2Novedades .headercontainer input[type="checkbox"],
+  .parrafo2Novedades .respmenu .fa-bars,
+  .parrafo2Novedades .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px; }
+  .parrafo2Novedades .headercontainer .fa-bars,
+  .parrafo2Novedades .respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none; }
+  .parrafo2Novedades .headercontainer input[type="checkbox"] {
+    opacity: 0; }
+  .parrafo2Novedades .headercontainer {
+    color: white;
+    position: relative;
+    background: #123456;
+    min-height: 48px; }
+  .parrafo2Novedades .headercontainer nav {
+    display: none; }
+  .parrafo2Novedades .headercontainer input:checked ~ nav {
+    display: block; }
+  .parrafo2Novedades .headercontainer input:checked ~ .fa-bars {
+    display: none; }
+  .parrafo2Novedades .headercontainer input:not(:checked) ~ .fa-times {
+    display: none; }
