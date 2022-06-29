@@ -52,6 +52,9 @@ footer {
   color: #d9c8b4;
   margin-right: 10px; }
 
+.telefono {
+  color: whitesmoke !important; }
+
 .telefono .email {
   color: whitesmoke;
   margin-right: 30px;
@@ -119,6 +122,15 @@ footer {
 
 .btn--send-mail {
   background-color: #C25E30; }
+
+.contacto {
+  width: 75%;
+  margin: 25px auto; }
+
+.cards {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-around; }
 
 /* ESTILOS RESPONSIVE */
 /* HEADER */
